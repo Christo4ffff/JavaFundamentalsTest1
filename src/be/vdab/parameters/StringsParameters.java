@@ -1,4 +1,4 @@
-package TestOef1;
+package parameters;
 
 import java.util.Scanner;
 
