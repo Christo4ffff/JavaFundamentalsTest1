@@ -1,6 +1,6 @@
-package Composition.Creators;
+package be.vdab.Composition.Creators;
 
-public abstract class Author {
+public class Author {
 
     private String name;
     private String email;
@@ -8,6 +8,9 @@ public abstract class Author {
 
     public Author (String name, String email, char gender){};
 
+    /**
+     * this down here is a field of your Author class now... Creating specific objects should be done in a main app.
+     */
     Author FowsiaKoofi = new Author("Fowsia Koofi", "koofi.fawsia@pakistan.com", 'f') {
     };
 
@@ -27,4 +30,8 @@ public abstract class Author {
     public char getGender() {
         return gender;
     }
+
+    /**
+     * no tostring?
+     */
 }

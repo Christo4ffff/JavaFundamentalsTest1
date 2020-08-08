@@ -1,9 +1,12 @@
-package parameters;
+package be.vdab.parameters;
 
 import java.util.Scanner;
 
 public class StringsParameters {
 
+    /**
+     * Er werd gevraagd om implementaties in methodes te zetten in een aparte klasse, niet alles in één main methode.
+     */
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
@@ -46,12 +49,18 @@ public class StringsParameters {
                     break;
                 default:
             }
+            /**
+             * Je gebruikt dezelfde variabele vowelCount om zowel de tel van vowels bij te houden als 'de positie van de cursor' in het woord.
+             */
             ch = s.charAt(vowelCount++);
             vowelCount++;
         }
         System.out.println("Het aantal klinkers is: " + vowelCount);
 
 //test op webpage
+        /**
+         * Applausje voor luiheid! (y)
+         */
         if (s.startsWith("http://")) {
             System.out.println("Er werd een url ingegeven");
         }

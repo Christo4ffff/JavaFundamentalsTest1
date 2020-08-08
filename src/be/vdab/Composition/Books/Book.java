@@ -1,6 +1,6 @@
-package Composition.Books;
+package be.vdab.Composition.Books;
 
-import Composition.Creators.Author;
+import be.vdab.Composition.Creators.Author;
 
 public class Book {
 
@@ -10,12 +10,14 @@ public class Book {
     private int qty = 0;
 
     public Book(String name, String author, int price, int qty) {
+        /**
+         * You forgot to set the parameters to their corresponding fields...
+         * this.name = name;
+         * etc.
+         */
     }
 
-//test toStrings
-    Author FowsiaKoofi = new Author("Fowsia Koofi", "koofi.fawsia@pakistan.com", 'f') {
-    };
-    Book LTMC = new Book("Letters to my children", "Fowsia Koofi", 20,30);
+
 
 //getters setters
 
@@ -50,4 +52,8 @@ public class Book {
     public void setQty(int qty) {
         this.qty = qty;
     }
+
+    /**
+     * No tostring method?
+     */
 }
